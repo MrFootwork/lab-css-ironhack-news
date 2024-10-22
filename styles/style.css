@@ -26,7 +26,6 @@ ul {
   font-weight: lighter;
 }
 
-
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
   position        : fixed;
@@ -125,6 +124,17 @@ header {
   }
 }
 
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .navbar {
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+    width        : 100%;
+    border-bottom: 1px solid white;
+  }
+}
+
 /* Articles */
 .main-article {
   margin : 20px;
@@ -200,6 +210,16 @@ header {
 
   .article {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .article {
+    width: 46%;
+  }
+
+  .articles-container {
+    gap: 40px;
   }
 }
 
