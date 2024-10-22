@@ -112,6 +112,10 @@ header {
   font-weight    : bold;
 }
 
+nav img {
+  display: none;
+}
+
 @media screen and (max-width: 760px) {
   .navbar {
     display       : flex;
@@ -121,6 +125,29 @@ header {
   .navbar li {
     width        : 100%;
     border-bottom: 1px solid white;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .newspaper-name {
+    border-bottom: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar li {
+    display: none;
+  }
+
+  nav img {
+    display: block;
+    margin : 10px auto;
+  }
+
+  nav {
+    height: 40px;
   }
 }
 
